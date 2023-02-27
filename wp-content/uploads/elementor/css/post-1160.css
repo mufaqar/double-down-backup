@@ -1,0 +1,8 @@
+.elementor-1160 .elementor-element.elementor-element-232d96f > .elementor-container{min-height:500px;}.elementor-1160 .elementor-element.elementor-element-232d96f > .elementor-background-overlay{opacity:0.5;transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-1160 .elementor-element.elementor-element-232d96f{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin-top:0px;margin-bottom:0px;}.elementor-1160 .elementor-element.elementor-element-d8fc622{text-align:center;}.elementor-1160 .elementor-element.elementor-element-d8fc622 .elementor-heading-title{color:var( --e-global-color-secondary );font-family:"digital7", Sans-serif;font-size:55px;font-weight:500;}.elementor-1160 .elementor-element.elementor-element-d8fc622 > .elementor-widget-container{margin:0px 0px 10px 0px;}.elementor-1160 .elementor-element.elementor-element-d6f9890 > .elementor-widget-container{margin:0px 0px 0px 0px;}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'digital7';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('http://demo.mufaqar.com/dev3/wp-content/uploads/2021/12/digital-7.woff2') format('woff2');
+}
+/* End Custom Fonts CSS */

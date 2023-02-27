@@ -1,0 +1,32 @@
+{
+  "checkout": {
+    "integrationType": "EmbeddedCheckout",
+    "url": "http://localhost/food/checkout.html",
+    "termsUrl": "https:<doubledoun.co/terms.html"
+  },
+  "order": {
+    "items": [
+      {
+        "reference": "0333",
+        "name": "Demo product",
+        "quantity": 50,
+        "unit": "weekly",
+        "unitPrice": 15000,
+        "grossTotalAmount": 19000,
+        "netTotalAmount": 160000
+      },
+        {
+        "reference": "discount",
+        "name": "Demo Price discount",
+        "quantity": 1,
+        "unit": "pcs",
+        "unitPrice": -20000,
+        "grossTotalAmount": -20000,
+        "netTotalAmount": -20000
+        }
+    ],
+    "amount": 18000,
+    "currency": "SEK 02",
+    "reference": "Demo Order"
+  }
+}
