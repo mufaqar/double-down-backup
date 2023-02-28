@@ -20,18 +20,18 @@ $year=$week_arr[0];
         <div class="row ">
             <div class="catering_wrapper mt-5 mb-5 col-md-8">
                 <div class="catering_menu buttons">
-                    <a id="1" class="showSingle _active" target="1" data="bread-lunch" data-title="bread lunch"> Bread Lunch</a>
-                    <a id="2" class="showSingle" target="2" data="salad-lunch" data-title="salad lunch">Salad Lunch</a>
-                    <a id="3" class="showSingle" target="3" data="wrap-lunch" data-title="wrap lunch">Wrap Lunch</a>
+                    <a id="1" class="showSingle _active" target="1" data="bread-lunch" data-title="Brød lunsj ">Brød lunsj </a>
+                    <a id="2" class="showSingle" target="2" data="salad-lunch" data-title="Salat lunsj">Salat lunsj</a>
+                    <a id="3" class="showSingle" target="3" data="wrap-lunch" data-title="Wrap lunsj">Wrap lunsj</a>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="custom_container catering_wrapper ">                       
+        <div class="custom_container catering_wrapper ">                       
                        <div class="calender_wrapper d-md-flex justify-content-between align-items-center mt-5">
-                            <h2>This week's <span id="type">bread lunch</span> menu</h2>
+                            <h2>Denne ukens <span id="type">Brød lunsj </span> Meny</h2>
                             <div class="calender week_calender">
                                     <form action="" method="GET" id="weekform">
                                         <input type="hidden" name="catname" id="catname" value="bread-lunch" />
@@ -41,21 +41,21 @@ $year=$week_arr[0];
                             </div> 
                        </div>
     
-    <section id="div1" class="targetDiv activediv">
-    <?php  get_template_part( 'partials/menu', 'lunch' );  ?>          
-    </section>                
-    <section id="div2" class="targetDiv">   
-         <div class="catering_card_wrapper">
-            <div class="ajaxload"></div>         
-            </div> 
-    </section>
-    <section id="div3" class="targetDiv">
-    <div class="catering_card_wrapper">
-            <div class="ajaxload"></div>         
-            </div> 
-    </section>
+                    <section id="div1" class="targetDiv activediv">
+                    <?php  get_template_part( 'partials/menu', 'lunch' );  ?>          
+                    </section>                
+                    <section id="div2" class="targetDiv">   
+                        <div class="catering_card_wrapper">
+                            <div class="ajaxload"></div>         
+                            </div> 
+                    </section>
+                    <section id="div3" class="targetDiv">
+                    <div class="catering_card_wrapper">
+                            <div class="ajaxload"></div>         
+                            </div> 
+                    </section>
 
-    </div>
+            </div>
 
     </div>
     </div>

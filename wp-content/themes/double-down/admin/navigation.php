@@ -26,7 +26,7 @@
 
                     </div>
                     <div class="logout">                       	
-                    <a href="<?php echo wp_logout_url( home_url() ); ?>"> <img src="<?php bloginfo('template_directory'); ?>/reources/images/logout.png" alt=""><span>Log Out</span></a>
+                    <a href="<?php echo wp_logout_url( home_url() ); ?>"> <img src="<?php bloginfo('template_directory'); ?>/reources/images/logout.png" alt=""><span>Logg ut</span></a>
                     </div>
                     <img src="<?php bloginfo('template_directory'); ?>/reources/images/cancel.png" class="hide_nav" alt="" onclick="HideNav()">
             </div>
@@ -42,7 +42,7 @@
                             <div class="user">
                                 <h6><?php global $current_user; wp_get_current_user();
                                  if ( is_user_logged_in() ) { 
-                                    echo 'Hey, ' .  $current_user->display_name ; } 
+                                    echo 'Hei, ' .  $current_user->display_name ; } 
                                     else {
                                         wp_redirect( home_url('login'));                                     
                                         exit;

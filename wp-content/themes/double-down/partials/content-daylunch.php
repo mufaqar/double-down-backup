@@ -23,13 +23,13 @@
                             </div>
                         <?php endwhile;
                         wp_reset_query();  else : ?>
-                        <h2><?php _e('Nothing Found', 'ddd_translate'); ?></h2>
+                        <h2><?php _e('Ingenting funnet', 'ddd_translate'); ?></h2>
                     <?php endif; ?>
                 </div>
 
 
                 <div class="d-flex justify-content-between mt-5 mb-4 accessories">
-                   <h2 class="mt-4"><span style="color: #5FB227">2 -</span> Additionals</h2>
+                   <h2 class="mt-4"><span style="color: #5FB227">2 -</span> Tilbehør</h2>
                 </div>
                 <div class="product_wrapper row mb-4">
                     <?php query_posts(array(
@@ -64,7 +64,7 @@
 
                         <?php endwhile;
                         wp_reset_query();  else : ?>
-                        <h2><?php _e('Nothing Found', 'ddd_translate'); ?></h2>
+                        <h2><?php _e('Ingenting funnet', 'ddd_translate'); ?></h2>
                     <?php endif; ?>
 
                 </div>
@@ -74,5 +74,5 @@
 
     <div class="accordion_btns d-flex justify-content-end mb-5 mr-3">
       
-        <input type="submit" class="btn_primary" value="Save" />
+        <input type="submit" class="btn_primary" value="Lagre" />
     </div>

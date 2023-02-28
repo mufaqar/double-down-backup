@@ -1,4 +1,4 @@
-<?php /* Template Name: Personal-FD Weekly  */ 
+<?php /* Template Name: Personal-FD Ukentlig  */ 
 get_header();
 
 ?>
@@ -26,14 +26,14 @@ get_header();
                         $ddate = "today";
                         $date = new DateTime($ddate);
                         $weeksid = $date->format("W-m-y");  ?>
-                    <h2 class="mt-4"><span style="color: #5FB227">1 -</span> Lunch Boxes</h2>
+                    <h2 class="mt-4"><span style="color: #5FB227">1 -</span> Matbokser</h2>
                         <div class="product_wrapper row mb-4">
                                 <input type="hidden" value="<?php echo $weeksid ?>" id="weekid" >
                                 <input type="hidden" value="<?php echo get_current_user_id() ?>" id="uid" >                                
                                 <?php get_template_part( 'partials/lunchbox', 'fixeditems' ); ?>    
                         </div>
                         <div class="d-flex justify-content-between mt-5 mb-4 accessories">
-                            <h2 class="mt-4"><span style="color: #5FB227">2 -</span> Additionals</h2>                            
+                            <h2 class="mt-4"><span style="color: #5FB227">2 -</span> Tilbehør</h2>                            
                         </div>
                         <div class="product_wrapper row mb-4">
                             <?php query_posts(array(
@@ -74,7 +74,7 @@ get_header();
                                             </div>
 
                             <?php endwhile; wp_reset_query(); else : ?>
-                            <h2><?php _e('Nothing Found','ddd_translate'); ?></h2>
+                            <h2><?php _e('Ingenting funnet','ddd_translate'); ?></h2>
                             <?php endif; ?>
 
                         </div>
@@ -163,16 +163,16 @@ get_header();
                         </div>
 
                         <div class="vat">
-                            <h6 class=" d-flex justify-content-end mt-4">* All prices incl. 15% VAT</h6>
+                            <h6 class=" d-flex justify-content-end mt-4">*Alle priser ink. 15% Mva</h6>
                         </div>
 
                          <div class="mt-5 mb-5 d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
-                                <a href="<?php echo home_url('/profile/fixed-delivery-weekly'); ?>" class="btn_primary d-block" style="margin-right: 1rem;"> Weekly</a>
-                                <a href="<?php echo home_url('/profile/fixed-delivery'); ?>" class="btn_primary btn_sec d-block">Daily</a>
+                                <a href="<?php echo home_url('/profile/fixed-delivery-weekly'); ?>" class="btn_primary d-block" style="margin-right: 1rem;"> Ukentlig</a>
+                                <a href="<?php echo home_url('/profile/fixed-delivery'); ?>" class="btn_primary btn_sec d-block">Daglig</a>
                             </div>
                         <div>
-                        <input type="submit" id="order" class="btn_primary"  value="Save"/>                       
+                        <input type="submit" id="order" class="btn_primary"  value="Lagre"/>                       
                     </div>
                 </form>
             </div>

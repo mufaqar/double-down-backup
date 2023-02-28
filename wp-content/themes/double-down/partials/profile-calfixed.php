@@ -71,8 +71,8 @@
                                                                                     wp_reset_query();else: ?>
 
                                                             <div class="_pro_card">
-                                                                <h3>No fixed orders added for this week</h3>
-                                                                <p> Please choose your lunch </p>
+                                                                <h3>Ingen faste bestillinger lagt til denne uken</h3>
+                                                                <p> Vennligst velg din lunsjlevering </p>
                                                             </div>
 
                                                 <?php endif;?>

@@ -17,7 +17,7 @@ else
 $today = date("Y-m-d", strtotime('today'));
 
 
-echo "<h2>Order for " . $today . "</h2>";
+echo "<h2>Ordrer for " . $today . "</h2>";
 
 
 ?>
@@ -25,11 +25,11 @@ echo "<h2>Order for " . $today . "</h2>";
                 <thead>
                         <tr>
                             <th>Sr #</th>
-                            <th>Order ID</th>
-                            <th>Compnay Name</th>
-                            <th>Address</th>
-                            <th>Order Date</th>                      
-                            <th>Price</th>
+                            <th>Ordre ID</th>
+                            <th>Bedrifts navn</th>
+                            <th>Adresse</th>
+                            <th>Ordre dato</th>                      
+                            <th>Pris</th>
                             <th>Status</th>
                             <th>PDF</th>
                         </tr>
@@ -72,7 +72,7 @@ echo "<h2>Order for " . $today . "</h2>";
                             <?php endwhile;
                             wp_reset_query();
                         else : ?>
-                            <h2><?php _e('Nothing Found', 'ddd_translate'); ?></h2>
+                          
                         <?php endif; ?>
 
                     </tbody>

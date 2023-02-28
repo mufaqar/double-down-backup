@@ -47,8 +47,8 @@ $year=$week_arr[0];
                 else : ?>
                    
                     <div class="catering_card _pro_salat">
-                            <h3> NO menu added for this day yet </h3>
-                            <p class="mt-3"> We are workign on it We will add it soon</p>                            
+                            <h3> Ingen meny er lagt til enda</h3>
+                            <p class="mt-3"> Meny kommer snart, vi jobber med det.</p>                            
                         </div>
 
 

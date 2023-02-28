@@ -64,11 +64,11 @@
                         <h3><?php echo $day; ?> | <span><?php the_title() ?></span></h3>
                         <div class="d-flex justify-content-between flex-wrap mt-4">
                             <div class="">
-                                <h6>Number of people:</h6>
+                                <h6>Antall personer:</h6>
                                 <p><?php the_field('people'); ?> </p>
                             </div>
                             <div class="">
-                                <h6>Address:</h6>
+                                <h6>Adresse:</h6>
                                 <p><?php the_field('address'); ?> </p>
                             </div>
                             <div class="">
@@ -76,7 +76,7 @@
                                 <?php echo get_the_terms($post->ID, 'food_type')[0]->name; ?>
                             </div>
                             <div class="">
-                                <h6>Budget per person:</h6>
+                                <h6>Budsjett per person:</h6>
                                 <p>NOK <?php the_field('person'); ?></p>
                             </div>
                             <div class="">
@@ -90,7 +90,7 @@
                 <?php endwhile;
                 wp_reset_query();
             else : ?>
-                <h2><?php _e('Nothing Found', 'ddd_translate'); ?></h2>
+                <h2><?php _e('Ingenting funnet', 'ddd_translate'); ?></h2>
             <?php endif; ?>
 
 

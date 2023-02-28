@@ -32,28 +32,28 @@ else {
         <form class="addprofile" id="profileform" action="#" > 
             <div class="first_step step_wrapper d-flex justify-content-center flex-column align-items-center text-center">
             <a href="<?php echo home_url(); ?>"> <img src="<?php bloginfo('template_directory'); ?>/reources/images/left arrow.png" class="arrow position-absolute" alt="back arrow"> </a>
-                <p>NB! Is the company you work for already registered? Feel free toask an admin for the corporate
-                    agreement for an invitation to join</p>
+                <p>NB! Er selskapet du jobber for allerede registrert? Spør gjerne en administrator om bedriftsavtalen for en invitasjon til å bli med.
+</p>
                 <div class="pl-4 pr-4">
-                    <h2 class="">Create Buisness Agreement</h2>
+                    <h2 class="">Opprett forretningsavtale</h2>
                     <div class="form-group w-100 ">
-                        <label for="compnay_name">Company Name</label>
-                        <input type="text" class="form-control" id="compnay_name" placeholder="Company Name" required >
+                        <label for="compnay_name">Firmanavn</label>
+                        <input type="text" class="form-control" id="compnay_name" placeholder="Firmanavn" required >
                     </div>
                     <div class="form-group w-100 mt-2">
-                        <label for="compnay_name">Company Number</label>
-                        <input type="text" class="form-control" id="compnay_number" placeholder="Company Number" required >
+                        <label for="compnay_name">Firmanummer</label>
+                        <input type="text" class="form-control" id="compnay_number" placeholder="Firmanummer" required >
                     </div>
 
                     <div class="form-group w-100 mt-3 mb-5">
-                        <label for="compnay_delivery_address">Delivery adress</label>
+                        <label for="compnay_delivery_address">Leveringsadresse</label>
                         <textarea class="form-control" id="compnay_delivery_address" rows="3"
-                            placeholder="Enter Delivery adress"></textarea>
+                            placeholder="Legg til leveringsadresse"></textarea>
                         <!-- <input type="text" class="form-control" id="compnay_agreement" 
                             placeholder="Agreement Title" > -->
                     </div>
 
-                    <a type="next" class="btn_primary d-block next" onclick="stepOne()">Continue</a>
+                    <a type="next" class="btn_primary d-block next" onclick="stepOne()">Fortsett</a>
                 </div>
             </div>
 
@@ -63,25 +63,26 @@ else {
                     onclick="backToStepOne()">
 
                 <div class="pl-4 inner-content pr-4">
-                    <h2 class=""> Customize company agreement for Oranchy AS</h2>
-                    <p class="align-self-start">Choose if the company should cover some of the employees lunch.</p>
+                    <h2 class=""> Tilpass bedriftsavtale for:</h2>
+                    <p class="align-self-start">Velg om bedriften skal dekke noen av de ansattes lunsj.</p>
                     <div class="launch mt-3 mb-4 form-group w-100 d-lg-flex align-items-center">
                         <input type="text" class="form-control" id="lunch_benefit" 
-                            placeholder="Company Pay 20">
+                            placeholder="Bedriften betaler 20">
                         <select name="lunch_benfit_type" id="lunch_benfit_type" class="">
                             <option value="%">%</option>
                             <option value="$">NOK</option>
                         </select>
-                        <p class="text-nowrap">of the lunch to each employee?</p>
+                        <p class="text-nowrap">av lunsjen til hver ansatt?</p>
                     </div>
-                    <h6>First Possible start Date</h6>
-                    <p class="text">Employees will not automatically start up on this data, but no one can startup,
-                        earlier than the specific date</p>
+                    <h6>Første mulige startdato</h6>
+                    <p class="text">Ansatte vil ikke automatisk starte opp på disse dataene, men ingen kan starte opp tidligere enn den spesifikke datoen
+</p>
                     <div class="form-group w-100 mt-3 mb-5">
                         <input type="text" class="form-control" id="starting_date" value="<?php echo $order_date;?>"
                             placeholder="<?php  echo $order_date; ?>" disabled>
-                        <p class="invite">Invite more people from work to the company agreement</p>
-                        <h6>It’s easy to add more employees later too</h6>
+                        <p class="invite">Inviter flere fra jobb til bedriftsavtalen
+</p>
+                        <h6>Det er enkelt å legge til flere ansatte senere også</h6>
                     </div>
 
                     <div class="emplate form-group w-100 mb-3 d-flex align-items-center">
@@ -100,7 +101,7 @@ else {
                             aria-describedby="emailHelp" placeholder="">
                     </div>
 
-                    <a type="next" class="btn_primary d-block next" onclick="stepTwo()">Continue</a>
+                    <a type="next" class="btn_primary d-block next" onclick="stepTwo()">Fortsett</a>
                 </div>
             </div>
 
@@ -109,47 +110,42 @@ else {
                 class="third_step step_wrapper d-flex justify-content-center flex-column align-items-center text-center">
                 <img src="<?php bloginfo('template_directory'); ?>/reources/images/left arrow.png" class="arrow position-absolute" alt="back arrow"
                     onclick="backToStepTwo()">
-
                 <div class="pl-4 third pr-4">
-
-                    <p> As a buisness administrator, you must hve your own user to log in. Then you get full access
-                        tothe corporate agreement , and can add more administrators</p>
-                    <h2 class="">Your Information</h2>
+                    <p> Som bedriftsadministrator må du ha egen bruker for å logge inn. Da får du full tilgang til bedriftsavtalen , og kan legge til flere administrator.</p>
+                    <h2 class="">Din informasjon</h2>
                     <div class="form-group w-100">
-                        <label for="name">Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name" value="" required >
+                        <label for="name">Fullt navn</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ditt navn" value="" required >
                     </div>
                     <div class="form-group w-100 mt-3">
-                        <label for="username">Email</label>
-                        <input type="text" class="form-control" id="username" placeholder="Your Email Address" value="" required>
+                        <label for="username">E-post</label>
+                        <input type="text" class="form-control" id="username" placeholder="Din e-post adresse" value="" required>
                     </div>
                     <div class="form-group w-100 mt-3">
-                        <label for="phone">Phone</label>
-                        <input type="text" class="form-control" id="phone" placeholder="Your Phone Number" value="">
+                        <label for="phone">Telefon</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Ditt telefonnummer" value="">
                     </div>
 
                     <div class="pinfo mt-5">
-                        <h2 class="">Terms of use, privacy and relevant information</h2>
+                        <h2 class="">Vilkår for bruk, personvern og relevant informasjon</h2>
                         <p class="text"> 
-                            I would like to receive relevant information about products and services
-                            from Double Down Dish. This could be information, for example
-                            about lunch menus and nutritional content, news and changes,
-                            offers, promotions, surveys, etc. We promise not to bother you prematurely.
+                        Jeg vil gjerne motta relevant informasjon om produkter og tjenester fra Double Down Dish. Dette kan være informasjon, for eksempel om lunsjmenyer og næringsinnhold, nyheter og endringer, tilbud, kampanjer, undersøkelser osv. Vi lover å ikke plage deg for tidlig.
+
                         </p>
                     </div>
 
                     <div class="d-flex align-items-center mb-5">
                         <p class="">
                             <input type="radio" id="test1" name="radio-group" checked>
-                            <label for="test1">Yes, Please</label>
+                            <label for="test1">Ja, takk</label>
                         </p>
                         <p style="margin-left: 2rem;">
                             <input type="radio" id="test2" name="radio-group">
-                            <label for="test2">No Thanks</label>
+                            <label for="test2">Nei, takk</label>
                         </p>
                     </div>
 
-                    <button type="next" class="btn_primary d-block next">Complete</button>
+                    <button type="next" class="btn_primary d-block next">Fullfør</button>
                 </div>
             </div>
 
@@ -159,12 +155,12 @@ else {
             <div  class="finish_step step_wrapper d-flex justify-content-center flex-column align-items-center text-center">            
                 <div class="content mt-5">
                     <div class="right"><img src="<?php bloginfo('template_directory'); ?>/reources/images/img 3.png" alt=""></div>
-                    <h1 class="finished">Finished!</h1>
-                    <h2 class="looking">We look forward to make you lunch</h2>
-                    <p class="find_information">We have now sent you an email where youwill find information on how to login and manage your company and your orders. Companies receive an invoice every second week.
-                    </p>
-                    <h3 class="employees_receive">Employees will be withdraw from their cards every end of the lunch week.</h3>
-                    <a href="<?php echo home_url(); ?>" class="btn_primary mb-5">Go to the front</a>
+                    <h1 class="finished">Ferdig!</h1>
+                    <h2 class="looking">Vi gleder oss til å lage lunsj til deg</h2>
+                    <p class="find_information">
+                    Vi har nå sendt deg en e-post hvor du finner informasjon om hvordan du logger inn og administrerer din bedrift og dine bestillinger. Bedrifter mottar en faktura annenhver uke.</p>
+                    <h3 class="employees_receive">Ansatte vil bli trukket fra registrert betalingskort hver ende av lunsjuken.</h3>
+                    <a href="<?php echo home_url(); ?>" class="btn_primary mb-5">Gå til startside</a>
                 </div>                    
             </div>
 

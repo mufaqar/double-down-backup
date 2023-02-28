@@ -7,26 +7,24 @@ get_header();
 
 <div class="custom_container catering_form mt-5 mb-5">
     <div class="_info mt-5 mb-5">
-    <h2>We create and deliver catering for most occasions. </h2>
+    <h2>Vi lager og leverer catering til de fleste anledninger. </h2>
                     <p>
-
-For example, could you think of "Spicy Streetfood" for the football evening with the boys, "High Tea" with the girls or perhaps "Turkish evening" with everyone at work? Feel free to send us information, wishes and needs for the catering of your event! When we receive the form, we will contact you to tailor together a fantastic and tasty menu where only your imagination sets limits!
-</p>
+                    Kunne dere for eksempel tenke dere «Spicy Streetfood» til fotballkvelden med gutta, «High Tea» med jentene eller kanskje «Tyrkisk aften» med alle på jobben? Send oss gjerne informasjon, ønsker og behov til catering av deres arrangement! Når vi mottar skjema tar vi kontakt med dere for å sammen skreddersy en fantastisk og smakfull meny hvor kun fantasien setter begrensinger!</p>
     </div>
     <hr>
     <div class="_form mt-5 p-4 pt-5 pb-5">
     <form class="addcatering" id="addcatering" action="#" > 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label for="">Number of people</label>
+                    <label for="">Antall personer</label>
                     <div class="_select">
-                        <input type="text" value="" placeholder="Please enter Number" id="people" required>
+                        <input type="text" value="" placeholder="Skriv antall" id="people" required>
                         <input type="hidden" value="<?php echo $uid ?>"  id="uid" >
                     </div>
                 </div>
 
                 <div class="col-md-6 mt-3 mt-md-0 mb-3">
-                    <label for="">Date of delivery</label>
+                    <label for="">Leveringsdato</label>
                     <div class="_select">
                         <input type="date" value="<?php echo date("Y-m-d"); ?>" placeholder="02-05-22" id="date" required>
                     </div>
@@ -34,28 +32,28 @@ For example, could you think of "Spicy Streetfood" for the football evening with
 
 
                 <div class="col-md-6 mt-3 mt-md-0 mb-3">
-                    <label for="">Time of delivery</label>
+                    <label for="">Leveringstid</label>
                     <div class="_select">
                         <input type="time" value="" placeholder="02-05-22" id="time">                 
                     </div>
                 </div>
 
                 <div class="col-md-6 mt-3 mt-md-0 mb-3">
-                    <label for="">Address of delivery</label>
+                    <label for="">Leveringsadresse</label>
                     <div class="_select">
                         <input type="text" value="" placeholder="Add your address" id="address" required>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <label for="">Reason</label>
+                    <label for="">Anledning</label>
                     <div class="_select">
-                    <input type="text" value="" placeholder="Please enter Reason" id="reason" required>
+                    <input type="text" value="" placeholder="Vennligst skriv anledning" id="reason" required>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <label for="">Food Type</label>
+                    <label for="">Type mat</label>
                     <div class="_select">
                         <select id="food_cat">
                         <?php   
@@ -73,7 +71,7 @@ For example, could you think of "Spicy Streetfood" for the football evening with
                 </div>
 
                 <div class="col-md-6 mt-3 mt-md-0 mb-3">
-                <label for="">Heating Options</label>
+                <label for="">Oppvarmingsmuligheter</label>
                     <div class="_select">
                         <select id="pro_sub_cat">
                         <?php   
@@ -92,14 +90,14 @@ For example, could you think of "Spicy Streetfood" for the football evening with
                 </div>
 
                 <div class="col-md-6 mb-3">
-                            <label for="">Budget Per Person</label>
+                            <label for="">Budsjett per person</label>
                                 <div class="_select">
                                     <input type="text" value="" placeholder="NOK 349" id="person" required>
                                 </div>
                             </div>
 
                 <div class="col-md-6 mb-3">
-                                <label for="">Allergens</label>
+                                <label for="">Allergener </label>
                                 <div class="_select caterting_lable">
                                   
                                     <?php
@@ -123,7 +121,7 @@ For example, could you think of "Spicy Streetfood" for the football evening with
 
                
                 <div class="d-flex justify-content-end savebtn">
-                    <input type="submit" class="btn_primary"  value="Save"/>
+                    <input type="submit" class="btn_primary"  value="Lagre"/>
                 </div>
             </div>
         </form>

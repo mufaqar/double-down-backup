@@ -8,7 +8,7 @@
                 <?php include('partials/daily-orders.php'); ?>
                 </table>
                 <br/><br/>
-            <a target="_blank" data-id="<?php echo $pid;?>" href="<?php echo home_url('pdf-all'); ?>/?order_id=<?php echo $pid;?>" class="download_pdf btn_primary">Download PDF All Food</a> 
+            <a target="_blank" data-id="<?php echo $pid;?>" href="<?php echo home_url('pdf-all'); ?>/?order_id=<?php echo $pid;?>" class="download_pdf btn_primary">Last ned PDF (all mat)</a> 
             </section>
     </div>
     

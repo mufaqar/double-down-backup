@@ -12,7 +12,7 @@ get_header('admin');
         <div class="row ">
             <div class="catering_wrapper mt-5 mb-2  p-0 w-100">
             <div class="catering_heading d-flex align-items-center">
-                                <h2> Food List</h2>
+                                <h2>Produktliste</h2>
                                 <div><a href="<?php echo home_url('admin/add-food-list'); ?>"><i class="fa-solid fa-plus"></i></a></div>
                             </div>
             </div>
@@ -25,11 +25,11 @@ get_header('admin');
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>Product Name</th>
-                    <th>Product Category</th>
-                    <th>Product Sub-Categories</th>
-                    <th>Date</th>
-                    <th>Price</th>
+                    <th>Produktnavn</th>
+                    <th>Produktkategori</th>
+                    <th>Underkategori</th>
+                    <th>Dato</th>
+                    <th>Pris</th>
                     <th></th>
                 </tr>
             </thead>
@@ -82,7 +82,7 @@ get_header('admin');
                     <?php endwhile;
                     wp_reset_query();
                 else : ?>
-                    <h2><?php _e('Nothing Found', 'ddd_translate'); ?></h2>
+                    <h2><?php _e('Ingenting funnet', 'ddd_translate'); ?></h2>
                 <?php endif; ?>
 
             </tbody>

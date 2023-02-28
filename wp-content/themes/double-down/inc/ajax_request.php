@@ -94,15 +94,15 @@ function addcatering_email()
 	$subject = "Double Downdish | Catering Inquiry";
 	$body  = "<p><strong> Name </strong>:  ".$name."  </p>";
 	$body  .= "<p><strong> Email </strong>:  ".$email."  </p>";
-	$body  .= "<p><strong> Number of People  </strong>:  ".$people."  </p>";
+	$body  .= "<p><strong> Antall personen  </strong>:  ".$people."  </p>";
 	$body  .= "<p><strong> Date  </strong>:  ".$date."  </p>";
 	$body  .= "<p><strong> Time  </strong>:  ".$time."  </p>";
 	$body  .= "<p><strong> Address  </strong>:  ".$address."  </p>";
 	$body  .= "<p><strong> Food Type  </strong>:  ".$food_type."  </p>";
-	$body  .= "<p><strong> Reason  </strong>:  ".$reason."  </p>";
-	$body  .= "<p><strong> Heating Options </strong>:  ".$pro_sub_cat."  </p>";
+	$body  .= "<p><strong> Anledning  </strong>:  ".$reason."  </p>";
+	$body  .= "<p><strong> Oppvarmingsmuligheter </strong>:  ".$pro_sub_cat."  </p>";
 	$body  .= "<p><strong> Allergens  </strong>:  ".$allergn_list."  </p>";
-	$body  .= "<p><strong> Budget Per Person  </strong>:  ".$person."  </p>";	
+	$body  .= "<p><strong> Budsjett per person  </strong>:  ".$person."  </p>";	
 	$headers = array('Content-Type: text/html; charset=UTF-8');	
 	$headers  = "From: " . $to . "\r\n";
 	$headers .= "Reply-To: " . $cc . "\r\n";
@@ -545,7 +545,7 @@ function weeklyfood_byday()
     $postinweek = new WP_Query($query_meta);
 	if ( $postinweek->have_posts() ): while ( $postinweek->have_posts() ): $postinweek->the_post();			
 		
-		// updated Existing Food order Weekly 
+		// updated Existing Food order Ukentlig 
 		$updated_post_id = get_the_ID();			
 		$food_orderd_data = array();
 		$food_orderd_data = get_post_meta( $updated_post_id, 'food_order' , true);		
@@ -715,7 +715,7 @@ function dailyfood()
 
     $postinweek = new WP_Query($query_meta);
 	if ( $postinweek->have_posts() ): while ( $postinweek->have_posts() ): $postinweek->the_post();
-	    // updated Existing Food order Weekly 
+	    // updated Existing Food order Ukentlig 
 		//echo "UPdate Order Query";
 		$updated_post_id = get_the_ID();	
 		update_post_meta($updated_post_id, 'food_order', $days);		
@@ -1279,8 +1279,8 @@ add_action('wp_ajax_nopriv_get_type_products', 'get_type_products');
 								<?php endwhile;
                                     wp_reset_query(); else : ?>
                                    <div class="catering_card _pro_salat">
-										<h3> Sorry, no <span><?php echo $catname ?></span> menu added for this (<?php echo $week?>)week</h3>
-										<p class="mt-3"> We are working on it, we will add it soon</p>                            
+										<h3> Beklager Nei <span><?php echo $catname ?></span> meny lagt til for dette(<?php echo $week?>)uke</h3>
+										<p class="mt-3"> Vi jobber med det, vi legger det til snart</p>                            
 									</div>
                                 <?php endif; 
 
@@ -1637,7 +1637,7 @@ add_action('wp_ajax_nopriv_get_type_products', 'get_type_products');
 									    <th scope="col">Description</th>
 										<th scope="col">Products</th>
 										<th scope="col">VAT</th>										
-										<th scope="col">Benifit</th>
+										<th scope="col">Fordel</th>
 										<th scope="col">Price</th>
 									</thead>
 									<tbody>

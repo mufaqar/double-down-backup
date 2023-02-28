@@ -2,7 +2,7 @@
     <div class="custom_container catering_wrapper mt-5 mb-5">
                         <div class="calender_wrapper d-flex justify-content-between align-items-center mt-5">
                                 <div class="catering_heading d-flex align-items-center">
-                                    <h2>Catering Orders</h2>
+                                    <h2>Catering bestillinger</h2>
                                     <!-- <div><a href="<?php echo home_url('catering-form'); ?>"><i class="fa-solid fa-plus"></i></a></div> -->
                                 </div>
                                     <!-- <div class="calender">
@@ -67,11 +67,11 @@
                                                     <h3><?php echo $day; ?> | <span><?php the_title()?></span></h3>
                                                     <div class="d-flex justify-content-between flex-wrap mt-4">
                                                         <div class="">
-                                                            <h6>Number of people:</h6>
+                                                            <h6>Antall personer:</h6>
                                                             <p><?php the_field('people'); ?> </p>
                                                         </div>
                                                         <div class="">
-                                                            <h6>Address:</h6>
+                                                            <h6>Adresse:</h6>
                                                             <p><?php the_field('address'); ?> </p>
                                                         </div>
                                                         <div class="">
@@ -90,7 +90,7 @@
                                             </div>
                     
                                 <?php endwhile; wp_reset_query(); else : ?>
-                                    <h2><?php _e('Nothing Found','ddd_translate'); ?></h2>
+                                    <h2><?php _e('Ingenting funnet','ddd_translate'); ?></h2>
                                 <?php endif; ?>   
 
                         </div>

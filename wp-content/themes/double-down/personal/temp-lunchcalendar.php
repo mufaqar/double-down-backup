@@ -191,11 +191,11 @@ wp_get_current_user();
 				                                                <div class="d-flex align-items-center justify-content-between _info  mb-3">
 				                                                    <div class="d-flex">
 				                                                        <div>
-				                                                            <strong class="title">Price:</strong>
+				                                                            <strong class="title">Pris:</strong>
 				                                                            <p><strong>Nok <?php echo $menu_price ?></strong></p>
 				                                                        </div>
 				                                                        <div style="margin-left: 3rem;">
-				                                                            <strong class="title">VAT:</strong>
+				                                                            <strong class="title">mva:</strong>
 				                                                            <p><?php echo $vat; ?></p>
 				                                                        </div>
 				                                                    </div>
@@ -221,8 +221,8 @@ wp_get_current_user();
 				                                            <?php endwhile;
                                                                 wp_reset_query();else: ?>
                                                 <div class="_pro_card">
-                                                                <h3>Sorry no food added yet</h3>
-                                                                <p> We did't added menu for this day yet! </p>
+                                                                <h3>Beklager, ingen mat lagt til enda</h3>
+                                                                <p> Vi har ikke lagt til meny for denne dagen enda! </p>
                                                             </div>
 
                                             <?php endif;?>
@@ -250,7 +250,7 @@ wp_get_current_user();
                             <div class='panels'>
                                 <div class='panel launchClander Fixed_delivery' id="weeklyfood">
                                         <div class="d-flex justify-content-between mt-5 mb-4 accessories">
-                                            <h2 class="mt-4"><span style="color: #5FB227">2 -</span> Additionals</h2>
+                                            <h2 class="mt-4"><span style="color: #5FB227">2 -</span> Tilbehør</h2>
                                         </div>
                                         <div class="product_wrapper row mb-4">
                                             <?php query_posts(array(
@@ -295,18 +295,18 @@ wp_get_current_user();
 
 				                                            <?php endwhile;
                                                         wp_reset_query();else: ?>
-                                            <h2><?php _e('Nothing Found', 'ddd_translate');?></h2>
+                                            <h2><?php _e('Ingenting funnet', 'ddd_translate');?></h2>
                                             <?php endif;?>
 
                                         </div>
                                         <div class="vat">
-                                            <h6 class=" d-flex justify-content-end mt-4">* All prices incl. 15% VAT</h6>
+                                            <h6 class=" d-flex justify-content-end mt-4">*Alle priser ink. 15% Mva</h6>
                                         </div>
 
                                         <div class="mt-5 mb-5 d-flex align-items-center justify-content-between">
                                             <div class="d-flex align-items-center">
-                                                <a href="" class="btn_primary d-block" style="margin-right: 1rem;"> Weekly</a>
-                                                <a href="" class="btn_primary btn_sec d-block">Daily</a>
+                                                <a href="" class="btn_primary d-block" style="margin-right: 1rem;"> Ukentlig</a>
+                                                <a href="" class="btn_primary btn_sec d-block">Daglig</a>
                                             </div>
                                         <div>
                                             
@@ -334,13 +334,13 @@ wp_get_current_user();
 
                                             // Query when date date and time is less then 11
 
-                                            ?><input type="submit" id="order" class="btn_primary"  value="Save"/> <?php
+                                            ?><input type="submit" id="order" class="btn_primary"  value="Lagre"/> <?php
                                         }
 
                                         elseif( $order_date >= $next_order_date2  )
                                         {
 
-                                            ?><input type="submit" id="order" class="btn_primary"  value="Save"/> <?php
+                                            ?><input type="submit" id="order" class="btn_primary"  value="Lagre"/> <?php
 
 
                                         }
@@ -352,17 +352,17 @@ wp_get_current_user();
                                         
                                             // When date is greator then and time is greator then 11 
                                             if($today_day_name == 'Monday' &&  $order_date > $system_order_date ) {
-                                                ?><a href="#" class="btn_primary btn_cancel">Sorry Date Over Friday</a><?php
+                                                ?><a href="#" class="btn_primary btn_cancel">Beklager dato over Friday</a><?php
                                             }
                                             
                                             elseif($next_order_date <= $system_order_date ) {
 
-                                                ?><a href="#" class="btn_primary btn_cancel">Sorry Date Over</a><?php
+                                                ?><a href="#" class="btn_primary btn_cancel">Beklager dato over</a><?php
 
 
                                             }
                                             else {
-                                                ?><input type="submit" id="order" class="btn_primary"  value="Save"/> <?php
+                                                ?><input type="submit" id="order" class="btn_primary"  value="Lagre"/> <?php
 
                                             }
                                            
@@ -372,7 +372,7 @@ wp_get_current_user();
                                         else
                                         {
                                             
-                                            ?><a href="#" class="btn_primary btn_cancel">Sorry Date Over</a><?php
+                                            ?><a href="#" class="btn_primary btn_cancel">Beklager dato over</a><?php
                                         }
                                             
                                          

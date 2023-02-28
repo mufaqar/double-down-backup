@@ -80,8 +80,8 @@ $week_days = getDatesFromRange($week_first_date,$week_end_date);
                 </div>
              </div>
 
-            <h2><?php _e('Business lunch calendar','ddd_translate'); ?></h2>
-            <p><?php _e('Here you can easily choose between or cancel the various lunch options from day to day. ','ddd_translate'); ?>
+            <h2><?php _e('Forretningslunsjkalender','ddd_translate'); ?></h2>
+            <p><?php _e('Her kan du enkelt velge mellom eller avbestille de ulike lunsjalternativene fra dag til dag. ','ddd_translate'); ?>
             </p>
 
                            
@@ -139,9 +139,9 @@ $week_days = getDatesFromRange($week_first_date,$week_end_date);
                                               
 
                             <?php endwhile;   ?>
-                            <h6>Total this Week | <span>NOK <?php  echo array_sum($total_week_price); ?></span></h6>
+                            <h6>Totalt denne uken | <span>NOK <?php  echo array_sum($total_week_price); ?></span></h6>
                             <?php wp_reset_query(); else : ?>
-                             <p>Total this Week,<br>:  NOK </p>
+                             <p>Totalt denne uken,<br>:  NOK </p>
                         <?php endif; ?>                    
                 </div>
             </div>
@@ -204,7 +204,7 @@ $week_days = getDatesFromRange($week_first_date,$week_end_date);
                             <div class="col-md-6 first border-end mb-5">
                                 <h3><?php the_title() ?> | <span> NOK <?php the_field('menu_item_price'); ?></span></h3>
                                 <p class="mt-3"><?php the_content() ?></p>
-                                <h6 class="mt-2">Allergenes:</h6>
+                                <h6 class="mt-2">Allergener:</h6>
                                 <p>
                                     <?php echo strip_tags (
                                                         get_the_term_list( get_the_ID(), 'menu_sub_types',"",", " )
@@ -220,13 +220,13 @@ $week_days = getDatesFromRange($week_first_date,$week_end_date);
                                 </div>
                             </div>
                         <?php endwhile; wp_reset_query();  else : ?>
-                        <h2><?php _e('Nothing Found', 'ddd_translate'); ?></h2>
+                        <h2><?php _e('Ingenting funnet', 'ddd_translate'); ?></h2>
                     <?php endif; ?>
                 </div>
 
 
                 <div class="d-flex justify-content-between mt-5 mb-4 accessories">
-                   <h2 class="mt-4"><span style="color: #5FB227">2 -</span> Additionals</h2>
+                   <h2 class="mt-4"><span style="color: #5FB227">2 -</span> Tilbehør</h2>
                 </div>
                 <div class="product_wrapper row mb-4">
                     <?php query_posts(array(
@@ -263,7 +263,7 @@ $week_days = getDatesFromRange($week_first_date,$week_end_date);
 
                         <?php endwhile;
                         wp_reset_query();  else : ?>
-                        <h2><?php _e('Nothing Found', 'ddd_translate'); ?></h2>
+                        <h2><?php _e('Ingenting funnet', 'ddd_translate'); ?></h2>
                     <?php endif; ?>
 
                 </div>
@@ -281,18 +281,18 @@ $week_days = getDatesFromRange($week_first_date,$week_end_date);
                                          $order_time = strtotime(date('11:00'));
                                             if($order_date <= $system_order_date &&  $current_time < $order_time  )
                                             {
-                                                ?><input type="submit" id="order" class="btn_primary"  value="Save"/> <?php
+                                                ?><input type="submit" id="order" class="btn_primary"  value="Lagre"/> <?php
                                             }
 
                                         elseif($order_date > $system_order_date)
                                             {
                                             
-                                            ?><input type="submit" id="order" class="btn_primary"  value="Save"/> <?php
+                                            ?><input type="submit" id="order" class="btn_primary"  value="Lagre"/> <?php
                                         }
                                         else
                                         {
                                             
-                                            ?><a href="#" class="btn_primary btn_cancel">Sorry Date Over </a><?php
+                                            ?><a href="#" class="btn_primary btn_cancel">Beklager dato over </a><?php
                                         }
                                         
                                          

@@ -7,7 +7,7 @@
   "order": {
     "items": [
       {
-        "reference": "0333",
+        "reference": "Temp",
         "name": "Demo product",
         "quantity": 50,
         "unit": "weekly",

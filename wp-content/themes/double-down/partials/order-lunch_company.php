@@ -2,7 +2,7 @@
     <div class="custom_container catering_wrapper mt-5 mb-5">
                          <div class="calender_wrapper d-flex justify-content-between align-items-center mt-5">
                                 <div class="catering_heading d-flex align-items-center">
-                                    <h2>Lunch  Orders</h2>                                
+                                    <h2>Lunsjbestillinger</h2>                                
                                 </div>                       
                         </div>
                         <div class="catering_card_wrapper">
@@ -10,14 +10,14 @@
                                 <table class="_table">
                                     <thead>
                                     <tr>
-                                        <th scope="col">Order ID</th>                                    
+                                        <th scope="col">Bestillings ID</th>                                  
                                         <th scope="col">Type</th>
-                                        <th scope="col">Week Id</th>
-                                        <th scope="col">Item Price</th>
-                                        <th scope="col">Emplyees</th>
-                                        <th scope="col">Benifit</th>
-                                        <th scope="col">Days</th>
-                                        <th scope="col">Company Pay</th>
+                                        <th scope="col">Uke</th>
+                                        <th scope="col">Varepris</th>
+                                        <th scope="col">Ansatte</th>
+                                        <th scope="col">Fordel</th>
+                                        <th scope="col">Dager</th>
+                                        <th scope="col">Bedriftslønn</th>
                                         <th scope="col">Total</th>
                                     </tr>
                                     </thead>
@@ -115,7 +115,7 @@
                                                                         <td>NOK <?php echo $order_total_price ?> </td>
                                                                         </tr>
                                             <?php endwhile; wp_reset_query(); else : ?>
-                                                    <h2><?php _e('Nothing Found','ddd_translate'); ?></h2>
+                                                    <h2><?php _e('Ingenting funnet','ddd_translate'); ?></h2>
                                                 <?php endif; ?>  
                                         
                                         

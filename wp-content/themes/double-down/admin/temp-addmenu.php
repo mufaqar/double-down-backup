@@ -47,7 +47,7 @@ get_header('admin');
             </div>
         </div>
         <div class="mb-4 mt-3">
-            <label class="form-label admin_label">Allergens</label>
+            <label class="form-label admin_label">Allergener </label>
             <div class="_ad_sel_wrapper">
 
                 <div class="admin_arrow_down plus"><i class="fa-solid fa-plus"></i></div>

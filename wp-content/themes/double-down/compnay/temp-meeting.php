@@ -16,10 +16,10 @@ $uid =  get_current_user_id() ;
             <div class="date_filter d-flex justify-content-center flex-column align-items-center">
             <div class="row">
                     <div class="col">
-                    <label>Choose Date</label>
+                    <label>Velg dato</label>
                          <input type="date" id="date" value="<?php echo date("Y-m-d"); ?>">
                     </div>
-                    <div class="col"> <label>Choose Time</label>
+                    <div class="col"> <label>Velg leveringstid</label>
                     <input type="time"  value="" placeholder="02-05-22" id="time">
                     </div>
                 </div>
@@ -28,7 +28,7 @@ $uid =  get_current_user_id() ;
                 <input type="hidden" value="<?php echo date("W"); ?>" id="weekid" >
             </div>
             <div class="_content mt-5 mb-5">
-                <h2>Select Product</h2>
+              
                 <div class="row">
                     <?php query_posts(array(
                         'post_type' => 'meeting_food',
@@ -59,7 +59,7 @@ $uid =  get_current_user_id() ;
                         <?php endwhile;
                         wp_reset_query();
                     else : ?>
-                        <h2><?php _e('Nothing Found', 'ddd_translate'); ?></h2>
+                        <h2><?php _e('Ingenting funnet', 'ddd_translate'); ?></h2>
                     <?php endif; ?>
 
                 </div>
@@ -67,11 +67,11 @@ $uid =  get_current_user_id() ;
 
             <div class="row">
                 <div class="col-md-6">
-                    <h6 class="mt-2"><strong>Delivery Address</strong></h6>
+                    <h6 class="mt-2"><strong>Leveringsadresse</strong></h6>
                     <p><?php echo get_user_meta( $uid, 'compnay_delivery_address', true ); ?></p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-end align-items-end">
-                    <button class="btn green_btn">Order Now</button>
+                    <button class="btn green_btn">Bestill nå</button>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-<?php /* Template Name: Company-FD Daily  */
+<?php /* Template Name: Company-FD Daglig  */
 get_header('company');
 ?>
 <?php include('navigation.php'); ?>
@@ -19,9 +19,8 @@ get_header('company');
                 </div>
             </div>
             <form class="weeklyfood_daily" id="weeklyfood_daily" action="#">
-                <h2>Fixed delivery to Company</h2>
-                <p>Here you can easily choose between or cancel the various lunch options from day
-                    to day.
+                <h2>Fast levering til selskapet</h2>
+                <p>Her kan du enkelt velge mellom eller avbestille de ulike lunsjalternativene fra dag til dag.
                 </p>
 
                 
@@ -104,7 +103,7 @@ get_header('company');
                 $weeksid = $date->format("W-m-y");
 
                 ?>
-                <h2 class="mt-4"><span style="color: #5FB227">1 -</span> Lunch Boxes</h2>
+                <h2 class="mt-4"><span style="color: #5FB227">1 -</span> Matbokser</h2>
                 <div class="product_wrapper row mb-4">
                     <input type="hidden" value="<?php echo $weeksid ?>" id="weekid">
                     <input type="hidden" value="<?php echo get_current_user_id() ?>" id="uid">
@@ -114,7 +113,7 @@ get_header('company');
                 </div>
 
                 <div class="d-flex justify-content-between mt-5 mb-4 accessories">
-                    <h2 class="mt-4"><span style="color: #5FB227">2 -</span> Additionals</h2>
+                    <h2 class="mt-4"><span style="color: #5FB227">2 -</span> Tilbehør</h2>
                    
                 </div>
 
@@ -148,7 +147,7 @@ get_header('company');
                         <?php endwhile;
                         wp_reset_query();
                     else : ?>
-                        <h2><?php _e('Nothing Found', 'ddd_translate'); ?></h2>
+                        <h2><?php _e('Ingenting funnet', 'ddd_translate'); ?></h2>
                     <?php endif; ?>
 
                 </div>
@@ -158,11 +157,11 @@ get_header('company');
 
                 <div class="mt-5 mb-5 d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
-                        <a href="<?php echo home_url('/company-profile/lunch-calendar/fixed-delivery-weekly'); ?>" class="btn_primary btn_sec d-block" style="margin-right: 1rem;"> Weekly</a>
-                        <a href="<?php echo home_url('/company-profile/lunch-calendar/fixed-delivery'); ?>" class="btn_primary  d-block">Daily</a>
+                        <a href="<?php echo home_url('/company-profile/lunch-calendar/fixed-delivery-weekly'); ?>" class="btn_primary btn_sec d-block" style="margin-right: 1rem;"> Ukentlig</a>
+                        <a href="<?php echo home_url('/company-profile/lunch-calendar/fixed-delivery'); ?>" class="btn_primary  d-block">Daglig</a>
                     </div>
                     <div>
-                        <input type="submit" id="order" class="btn_primary" value="Save" />
+                        <input type="submit" id="order" class="btn_primary" value="Lagre" />
 
                     </div>
             </form>

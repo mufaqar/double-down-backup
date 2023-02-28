@@ -1,12 +1,12 @@
                 <thead>
                         <tr>
                             <th>Sr #</th>
-                            <th>Order ID</th>
-                            <th>Date</th>
-                            <th>Name</th>
-                            <th>Products</th>  
-                            <th>Allergenes</th>
-                            <th>Price</th>
+                            <th>Ordre ID</th>
+                            <th>Dato</th>
+                            <th>Navn</th>
+                            <th>Produkter</th>  
+                            <th>Allergener</th>
+                            <th>Pris</th>
                             <th>Status</th>
                         </tr>
                     </thead>
@@ -37,46 +37,45 @@
                                     <td>
                                         <ul>
 
-                                    <?php
+                                                    <?php
 
-                                    foreach($food_items as $index => $food){
-                                        ?>
+                                                    foreach($food_items as $index => $food){
+                                                        ?>
 
-                                            <li>
-                                              
-                                                <?php   foreach($food as $key => $ky_item) { 	?>
-                                                    <p>
-                                                        <?php echo  get_the_title($key) . " [". $ky_item . "] " ; ?>
-                                                       
-                                                        <p>
-                                                
-                                                    <?php 	}  ?>
-                                                   
-                                               
-                                          
-                                                   
-                                             
-																
-                                                </li>
+                                                            <li>
+                                                            
+                                                                <?php   foreach($food as $key => $ky_item) { 	?>
+                                                                    <p>
+                                                                        <?php echo  get_the_title($key) . " [". $ky_item . "] " ; ?>
+                                                                    
+                                                                        <p>
+                                                                
+                                                                    <?php 	}  ?>
+                                                                
+                                                            
+                                                        
+                                                                
+                                                            
+                                                                                
+                                                                </li>
 
-                                        <?php
-
-
-                                    }
+                                                        <?php
 
 
+                                                    }
 
-                                    ?> </ul>
+
+
+                                                    ?> </ul>
                                     </td>  
-                                    <td></td>   
-                                                         
+                                    <td></td>                                                            
                                     <td>NOK <?php echo get_post_meta(get_the_ID(), 'order_total', true); ?></td>
                                     <td><span class="status <?php echo get_post_meta(get_the_ID(), 'order_status', true); ?>"><?php echo get_post_meta(get_the_ID(), 'order_status', true); ?> </span> </td>
                                 </tr>
                             <?php endwhile;
                             wp_reset_query();
                         else : ?>
-                            <h2><?php _e('Nothing Found', 'ddd_translate'); ?></h2>
+                          
                         <?php endif; ?>
 
                     </tbody>

@@ -25,7 +25,7 @@
     pagination($additional_loop->max_num_pages);
 } ?>		
 <?php else : ?>
-    <h2><?php _e('Nothing Found','ddd_translate'); ?></h2>
+    <h2><?php _e('Ingenting funnet','ddd_translate'); ?></h2>
 <?php endif; ?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

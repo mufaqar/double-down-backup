@@ -12,9 +12,9 @@ get_header('admin');
         <div class="row ">
             <div class="catering_wrapper mt-5 mb-2 col-md-8 p-0">
                 <div class="catering_menu buttons">
-                    <a id="1" class="showSingle _active" target="1" data="">All Users</a>
-                    <a id="2" class="showSingle" target="2" data="personal">Personlig profil</a>
-                    <a id="2" class="showSingle" target="2" data="Company">All Companies</a>
+                    <a id="1" class="showSingle _active" target="1" data="">Alle brukere</a>
+                    <a id="2" class="showSingle" target="2" data="personal">Ansatter</a>
+                    <a id="2" class="showSingle" target="2" data="Company">Bedrifte</a>
                 </div>
             </div>
         </div>
@@ -24,10 +24,10 @@ get_header('admin');
             <thead>
                 <tr>
                     <th>Sr #</th>
-                    <th>Name</th>
-                    <th>Type</th>
-                    <th>Phone Number</th>
-                    <th>Email Address</th>
+                    <th>Navn</th>
+                    <th>Brukertype</th>
+                    <th>Telefon</th>
+                    <th>E-post</th>
                    
                 </tr>
             </thead>

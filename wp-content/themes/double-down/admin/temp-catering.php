@@ -9,12 +9,12 @@ get_header('admin');
         <thead>
             <tr>
                 <th>#</th>
-                <th>Order Day</th>
-                <th>No of People</th>
-                <th>Address</th>
-                <th>Food Type</th>
-                <th>Price</th>
-                <th>Need allergens</th>
+                <th>Ordre dato</th>
+                <th>Antall pers.</th>
+                <th>Addresse</th>
+                <th>Mat type</th>
+                <th>Pris</th>
+                <th>Allergener</th>
                 <th>Status </th>
             </tr>
         </thead>
@@ -46,7 +46,7 @@ get_header('admin');
                 <?php endwhile;
                 wp_reset_query();
             else : ?>
-                <h2><?php _e('Nothing Found', 'ddd_translate'); ?></h2>
+                <h2><?php _e('Ingenting funnet', 'ddd_translate'); ?></h2>
             <?php endif; ?>
 
         </tbody>

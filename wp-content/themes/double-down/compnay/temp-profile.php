@@ -25,7 +25,7 @@ if ($query_date == '' ) {
                                         <div class="d-flex align-items-center __btn">
                                             <a href="<?php echo home_url('/company-profile/lunch-calendar'); ?>" class="btn_primary d-flex align-items-center">
                                                 <i class="fa-solid fa-fork-knife"></i>
-                                                <p style="margin-left: .5rem; color:white">Company Lunch</p>
+                                                <p style="margin-left: .5rem; color:white">Selskapslunsj</p>
                                             </a>
                                             <a  href="<?php echo home_url('/company-profile/orders'); ?>"  class="btn_primary btn_sec d-flex align-items-center">
                                                 <i class="fa-solid fa-newspaper"></i>
@@ -33,7 +33,7 @@ if ($query_date == '' ) {
                                             </a>
                                         </div>
                                         <div class="info d-flex align-items-center">
-                                            <h6><?php echo get_user_meta($uid, 'compnay_delivery_address', true); ?> | <span>Fixed <?php echo get_user_meta($uid, 'Company_days', true); ?> days a week</span></h6>
+                                            <h6><?php echo get_user_meta($uid, 'compnay_delivery_address', true); ?> | <span>faste  <?php echo get_user_meta($uid, 'Company_days', true); ?> dager i uken</span></h6>
                                             <!-- <div class="calender week_calender">
                                                 <input type="text" id="weekPicker2" value="<?php echo date("Y-W"); ?>">
                                                 <div class="wc-icon"><i class="fa-solid fa-calendar-days"></i></div>
@@ -44,7 +44,7 @@ if ($query_date == '' ) {
                                         <div class="calender_wrapper">
                                             <div class="row">
                                             <div class="col-md-10">
-                                            <h2>Fixed Lunch Orders <span><?php echo $query_date ?></span> </h2>
+                                            <h2>Faste leveringer <span><?php echo $query_date ?></span> </h2>
                                             </div>
                                             <div class="col-md-2">
                                             <div class="calender">
@@ -62,7 +62,7 @@ if ($query_date == '' ) {
                                         
                                     </div>
 
-                                    <h2>Lunch Orders <span><?php echo $query_date ?></span> </h2>
+                                    <h2>Lunsjbestillinger <span><?php echo $query_date ?></span> </h2>
                                     <?php get_template_part('partials/company', 'calorders');?>
                                 </div>
 

@@ -13,12 +13,12 @@ $user_info = get_userdata($uid);
         <div class='panel launchClander setting_tab'>            
             <div class="deatil_card d-md-flex justify-content-between align-items-center">
                 <div class="info">
-                    <h3>Shipping & VAT details</h3>
-                    <p>Shipping Price : <?php echo get_option('shipping_price');  ?>  </p>
-                    <p>VAT Price : <?php echo get_option('vat_price');  ?>  </p>
+                    <h3>Frakt og MVA</h3>
+                    <p>Frakt pris: <?php echo get_option('shipping_price');  ?>  </p>
+                    <p>Mva pris : <?php echo get_option('vat_price');  ?>  </p>
                 </div>
                 <div class="pt-4 pt-md-0">
-                    <button id="show_shipping" class="btn_primary">Update Shipping</button>
+                    <button id="show_shipping" class="btn_primary">Oppdater pris</button>
                 </div>
             </div> 
         </div>
@@ -41,22 +41,22 @@ $user_info = get_userdata($uid);
     <div class="popup">
         <form class="update_shipping" id="update_shipping" action="#">
             <div class="popup_wrapper">
-                <h3 class="ad_productss">Shipping & VAT Details</h3>
+                <h3 class="ad_productss">Frakt og MVA</h3>
                 <div class="_delivery_address d-flex flex-column justify-content-start align-items-start">
-                    <label>Shipment Price</label>
+                    <label>Frakt pris</label>
                     <div class="_field d-flex justify-content-between align-items-center">
                         <input type="text" name="shipping_price" id="shipping_price" value="<?php echo get_option('shipping_price');  ?>">
                
                     </div>
                 </div>
                 <div class="_delivery_address d-flex flex-column justify-content-start align-items-start">
-                    <label>VAT Price</label>
+                    <label>Mva pris</label>
                     <div class="_field d-flex justify-content-between align-items-center">
                     <input type="text" name="vat_price" id="vat_price" value="<?php echo get_option('vat_price');  ?>">
                     </div>
                 </div>
                 <div class="mt-5">
-                    <input type="submit" class="btn_primary" value="Save" />
+                    <input type="submit" class="btn_primary" value="Lagre" />
                 </div>
                 <img src="<?php bloginfo('template_directory'); ?>/reources/images/red cross.png" alt="" class="_cross">
             </div>

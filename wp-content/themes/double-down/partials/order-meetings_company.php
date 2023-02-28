@@ -2,7 +2,7 @@
   <div class="custom_container catering_wrapper mt-5 mb-5">
                  <div class="calender_wrapper d-flex justify-content-between align-items-center mt-5">
                         <div class="catering_heading d-flex align-items-center">
-                            <h2><?php _e('Meetings Orders','ddd_translate'); ?></h2>
+                            <h2><?php _e('Møtematbestillinger','ddd_translate'); ?></h2>
                             </div>
                        
                         </div>
@@ -11,10 +11,10 @@
                                 <table class="_table">
                                     <thead>
                                     <tr>
-                                        <th scope="col">Order ID</th>
+                                        <th scope="col">Bestillings ID</th>
                                         <th scope="col">Date</th>
-                                        <th scope="col">Total Price</th>
-                                        <th scope="col">User Type</th>
+                                        <th scope="col">Total pris</th>
+                                        <th scope="col">Brukertype</th>
                                         <th scope="col">Status</th>
                                     </tr>
                                     </thead>
@@ -56,7 +56,7 @@
                                                                         </tr>
                                             <?php endwhile; wp_reset_query(); else : ?>
                                                 <tr>   
-                                                <td colspan="5"> <h2><?php _e('Nothing Found','ddd_translate'); ?></h2></td>
+                                                <td colspan="5"> <h2><?php _e('Ingenting funnet','ddd_translate'); ?></h2></td>
                                                 </tr>
                                                 <?php endif; ?>  
                                         

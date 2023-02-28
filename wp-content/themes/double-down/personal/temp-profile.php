@@ -41,7 +41,7 @@ if ($query_date == '' ) {
                                         <div class="info d-flex align-items-center">
                                             <h6>
                                                 <?php
-                                                    echo get_user_meta($uid, 'compnay_delivery_address', true); ?> | <span> Fixed <?php echo get_user_meta($uid, 'Personal_days', true); ?>  days a week </span></h6>
+                                                    echo get_user_meta($uid, 'compnay_delivery_address', true); ?> | <span> faste  <?php echo get_user_meta($uid, 'Personal_days', true); ?>  dager i uken </span></h6>
                                             
 
                                         </div>
@@ -50,7 +50,7 @@ if ($query_date == '' ) {
                                         <div class="calender_wrapper">
                                             <div class="row">
                                                 <div class="col-md-10">
-                                                    <h2>Fixed Lunch Orders <span><?php echo $query_date ?></span> </h2>
+                                                    <h2>Faste leveringer <span><?php echo $query_date ?></span> </h2>
                                                 </div>
                                                 <div class="col-md-2">
                                                         <div class="calender">
@@ -66,7 +66,7 @@ if ($query_date == '' ) {
                                             </div>
                                            <?php get_template_part('partials/profile', 'calfixed');?>                                      
                                     </div>
-                                    <h2>Lunch Orders <span><?php echo $query_date ?></span> </h2>
+                                    <h2>Lunsjbestillinger <span><?php echo $query_date ?></span> </h2>
                                     <?php get_template_part('partials/profile', 'calorders');?>
                                 </div>
 

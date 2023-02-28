@@ -50,35 +50,30 @@ $uid = get_current_user_id();
         
         <div class='panels'>
             <div class='panel launchClander setting_tab'>
-                <h2>Corporate agreement settings</h2>
-                <p>As a company administrator, you can get an overview of and make changes
-                    to
-                    the
-                    company agreement here. Using the menu above, you can also see the
-                    company's
-                    lunch calendar, or change the regular deliveries.</p>
+                <h2>Innstillinger for bedriftsavtale</h2>
+                <p>Som bedriftsadministrator kan du få oversikt over og gjøre endringer til din firmaavtale her. </p>
                 <div class="deatil_card d-md-flex justify-content-between align-items-center">
                     <div class="info">
-                        <h3>Details of the agreement</h3>
-                        <p>The company pays  <span><strong><?php echo get_user_meta($uid, 'lunch_benefit', true );  ?></strong><?php $type =  get_user_meta($uid, 'lunch_benfit_type', true ); echo $type;  ?> <?php if($type == '$') { echo "Nok";} ?> </span> of each luch</p>
+                        <h3>Detaljer om avtalen</h3>
+                        <p>Selskapet betaler <span><strong><?php echo get_user_meta($uid, 'lunch_benefit', true );  ?></strong><?php $type =  get_user_meta($uid, 'lunch_benfit_type', true ); echo $type;  ?> <?php if($type == '$') { echo "Nok";} ?> </span> av hver lusj</p>
                         <ul class="mt-2">
-                        <li><span>Company Name:</span> <?php echo get_user_meta($uid, 'compnay_name', true );  ?> </li>
-                        <li><span>Company Number:</span> <?php echo get_user_meta($uid, 'compnay_number', true );  ?> </li>
+                        <li><span>Selskapsnavn:</span> <?php echo get_user_meta($uid, 'compnay_name', true );  ?> </li>
+                        <li><span>Firmanummer:</span> <?php echo get_user_meta($uid, 'compnay_number', true );  ?> </li>
                         </ul>
                     </div>
 
                     <div class="pt-4 pt-md-0">
-                        <button id="agreement" class="btn_primary">Update agreement</button>
+                        <button id="agreement" class="btn_primary">Oppdater avtale</button>
                     </div>
                 </div>
                 <!-- 2nd -->
                 <div class="deatil_card d-md-flex justify-content-between align-items-center">
                     <div class="info">                    
-                        <h3>Employees in the agreement</h3>
-                        <p><?php echo  count($available_active_employee); ?> Employee : Submit</p>
+                        <h3>Ansatte i avtalen</h3>
+                        <p><?php echo  count($available_active_employee); ?> Ansatt : </p>
                     </div>
                     <div class="pt-4 pt-md-0">
-                        <button id="emp_agreement" class="btn_primary">Update Employees</button>                        
+                        <button id="emp_agreement" class="btn_primary">Oppdater ansatte</button>                        
                     </div>
 
                 </div>
@@ -87,7 +82,7 @@ $uid = get_current_user_id();
                 <!-- 2 A -->
                 <div class="deatil_card d-md-flex justify-content-between align-items-center">
                     <div class="info">                    
-                        <h3>Shipping Methods</h3>
+                        <h3>Forsendelsesmetoder</h3>
                         <p><?php $method =  get_user_meta($uid, 'compnay_shipping_method', true );
 
                         if($method == 'method_one')
@@ -103,52 +98,52 @@ $uid = get_current_user_id();
                         ?></p>
                     </div>
                     <div class="pt-4 pt-md-0">
-                        <button id="shipping_method" class="btn_primary">Update Method</button>                        
+                        <button id="shipping_method" class="btn_primary">Oppdateringsmetode</button>                        
                     </div>
 
                 </div>
                 <!-- 3rd  -->
                 <div class="deatil_card d-md-flex justify-content-between align-items-center">
                     <div class="info">
-                        <h3>Meeting Food</h3>
-                        <p>Everyone deserves good food - even those you
-                            have invited to a meeting!</p>
+                        <h3>Møtemat</h3>
+                        <p>Alle fortjener god mat - også de du
+                            har invitert til møte!</p>
                     </div>
                     <div class="pt-4 pt-md-0">
-                        <a href="<?php echo home_url('meeting'); ?>" class="btn_primary">Order Meeting Food</a>
+                        <a href="<?php echo home_url('meeting'); ?>" class="btn_primary">Bestill møtemat</a>
                     </div>
                 </div>
 
                 <!-- 4th  -->
                 <div class="deatil_card d-md-flex justify-content-between align-items-center">
                     <div class="info">
-                        <h3>Delivery Address</h3>
+                        <h3>Leveringsadresse</h3>
                         <p> <?php echo get_user_meta($uid, 'compnay_delivery_address', true );  ?> <br> </p>
                      </div>
                     <div class="pt-4 pt-md-0">
-                        <button id="delivery_address" class="btn_primary">Update address</button>
+                        <button id="delivery_address" class="btn_primary">Oppdatere adresse</button>
                     </div>
                 </div>
 
                 <!-- 5th  -->
                 <div class="deatil_card d-md-flex justify-content-between align-items-center">
                     <div class="info">
-                        <h3>Daily Overview</h3>
-                        <p>Daily overview of orders</p>
+                        <h3>Daglig oversikt</h3>
+                        <p>Daglig oversikt av bestillinger</p>
                     </div>
                     <div class="pt-4 pt-md-0">
-                    <button id="daily_orders" class="btn_primary">See overview</button>
+                    <button id="daily_orders" class="btn_primary">Se oversikt</button>
                     </div>
                 </div>
 
                 <!-- 6th  -->
                 <div class="deatil_card d-md-flex justify-content-between align-items-center">
                     <div class="info">
-                        <h3>Billing and order details</h3>
+                        <h3>Betaling og ordreinfo</h3>
                       
                     </div>
                     <div class="pt-4 pt-md-0">
-                    <button id="show_invoice_detail" data-id="<?php echo $uid ?>" class="btn_primary">Payment details</button>
+                    <button id="show_invoice_detail" data-id="<?php echo $uid ?>" class="btn_primary">Betalingsdetaljer</button>
                     </div>
                 </div>
 
@@ -173,9 +168,9 @@ $uid = get_current_user_id();
         <div class="popup">
             <form class="update_deliver_address" id="update_deliver_address" action="#" > 
                 <div class="popup_wrapper">
-                    <h3 class="ad_productss">Compnay Delivery Address</h3>               
+                    <h3 class="ad_productss">Selskap Leveringsadresse</h3>               
                     <div class="_delivery_address d-flex flex-column justify-content-start align-items-start">
-                        <label>Delivery Address</label>
+                        <label>Leveringsadresse</label>
                         <div class="_field d-flex justify-content-between align-items-center">
                             <input type="text" name="address" id="address" placeholder="<?php echo get_user_meta($uid, 'compnay_delivery_address', true );  ?>" >
                             <input type="hidden" value="<?php echo get_current_user_id() ?>" id="uid" >    
@@ -187,7 +182,7 @@ $uid = get_current_user_id();
                         <img src="<?php bloginfo('template_directory'); ?>/reources/images/plus-thin.png" alt="">
                     </div> -->
                     <div class="mt-5">
-                        <input type="submit" class="btn_primary"  value="Save"/>
+                        <input type="submit" class="btn_primary"  value="Lagre"/>
                     </div>
                     
                     <img src="<?php bloginfo('template_directory'); ?>/reources/images/red cross.png" alt="" class="_cross">
@@ -200,8 +195,8 @@ $uid = get_current_user_id();
     <section class="hideme overlay emp_agreement">
         <div class="popup">
             <div class="popup_wrapper">
-                <h3>Employees in the Agreement</h3>
-                <h6>Total number of employees: <?php echo  count($available_active_employee); ?> </h6>
+                <h3>Ansatte i avtalen</h3>
+                <h6>Totalt antall ansatte: <?php echo  count($available_active_employee); ?> </h6>
                 <hr>
                 <div class="hideme alert alert-success showalert" role="alert">
                         <div class="response"></div>
@@ -209,8 +204,8 @@ $uid = get_current_user_id();
                 <div>
                     <div class="btn_toggle">
                         <div class="btn_wrapper d-flex justify-content-center">
-                            <button href="" class="activeEmp " onclick="activeEmp()">Active employees | <?php echo  count($available_active_employee); ?></button>
-                            <button href="" class="inactiveEmp active" onclick="inactiveEmp()">Inactive Employees | <?php echo  count($available_in_active_employee); ?></button>
+                            <button href="" class="activeEmp " onclick="activeEmp()">Aktive ansatte | <?php echo  count($available_active_employee); ?></button>
+                            <button href="" class="inactiveEmp active" onclick="inactiveEmp()">Inaktive ansatte | <?php echo  count($available_in_active_employee); ?></button>
                         </div>
                     </div>
 
@@ -221,7 +216,7 @@ $uid = get_current_user_id();
                             <form class="deactivate_employes" id="deactivate_employes" action="#">
                             <div class="p-4 _action" id="_action">                   
                                 <div class="d-flex justify-content-between mt-3">
-                                    <button id="todoactive" class="btn_primary">Deactivate</button>
+                                    <button id="todoactive" class="btn_primary">Deaktiver</button>
                                 </div>
                             </div>
 
@@ -299,7 +294,7 @@ $uid = get_current_user_id();
                                     </form>
                                     <form class="add_employes" id="add_employes" action="#">
                                     <hr class="mt-4 mb-4">
-                                    <h3>+ Invite new employees</h3>
+                                    <h3>+ Inviter nye ansatte</h3>
                                     <div class="__inner add  d-flex align-items-center justify-content-between mt-3">
                                        
                                             <div class="d-flex align-items-center w-100">
@@ -307,7 +302,7 @@ $uid = get_current_user_id();
                                                 <input type="hidden" id="uid" name="uid" value="<?php echo $uid?>" class="w-100">
                                                 <button class="d-flex align-items-center">
                                                     <img src="<?php bloginfo('template_directory'); ?>/reources/images/plus-thin.png" alt="">
-                                                    <span>Add</span>
+                                                    <span>Legg til</span>
                                                 </button>
                                             </div>  
                                                                             
@@ -328,19 +323,19 @@ $uid = get_current_user_id();
         <div class="popup">
         <form class="update_shipping_method" id="update_shipping_method" action="#" > 
             <div class="popup_wrapper">
-                <h3>Shipping Methods</h3>
+                <h3>Forsendelsesmetoder</h3>
                 <div>
                        <div class="btn_wrapper d-inline-flex justify-content-center">
                               <input type="hidden" value="<?php echo get_current_user_id() ?>" id="uid" >    
                               <input type="radio" id="method_one" name="shipping_methods" value="method_one">
-                              <label for="method_one">Method 1 (Compnay Pay $<?php echo get_option('shipping_price');  ?>)</label><br>
+                              <label for="method_one">Metode 1 (Bedriftslønn Kr <?php echo get_option('shipping_price');  ?>)</label><br>
                               <input type="radio" id="method_two" name="shipping_methods" value="method_two">
-                              <label for="method_two">Method 2 (Divided on Employees)</label><br>
+                              <label for="method_two">Metode 2 (delt på ansatte)</label><br>
                               <input type="radio" id="method_three" name="shipping_methods" value="method_three">
-                              <label for="method_three">Method 3 (Pickup)</label>
+                              <label for="method_three">Metode 3 (henting)</label>
                         </div>  
                         <div class="mt-5">                    
-                        <input type="submit" class="btn_primary"  value="Save"/>
+                        <input type="submit" class="btn_primary"  value="Lagre"/>
                     </div>
                 </div>
                 <img src="<?php bloginfo('template_directory'); ?>/reources/images/red cross.png" alt="" class="_cross">
@@ -353,23 +348,23 @@ $uid = get_current_user_id();
         <div class="popup">
         <form class="update_agreement" id="update_agreement" action="#" > 
                 <div class="popup_wrapper">
-                    <h3 class="ad_productss">Details of the agreement</h3>               
+                    <h3 class="ad_productss">Detaljer om avtalen</h3>               
                     <div class="_delivery_address d-flex flex-column justify-content-start align-items-start">
-                        <label>Company Name</label>
+                        <label>Selskapsnavn</label>
                         <div class="_field d-flex justify-content-between align-items-center">
                             <input type="text" name="compnay_name" id="compnay_name" value="<?php echo get_user_meta($uid, 'compnay_name', true );  ?>" >
                             <input type="hidden" value="<?php echo get_current_user_id() ?>" id="uid" >                               
                         </div>
                     </div>
                     <div class="_delivery_address d-flex flex-column justify-content-start align-items-start">
-                        <label>Company Number</label>
+                        <label>Firmanummer</label>
                         <div class="_field d-flex justify-content-between align-items-center">
                             <input type="text" name="compnay_number" id="compnay_number" value="<?php echo get_user_meta($uid, 'compnay_number', true );  ?>" >
                                                      
                         </div>
                     </div>
                     <div class="_delivery_address d-flex flex-column justify-content-start align-items-start">
-                    <label class="mt-4 ">Company Pay</label>
+                    <label class="mt-4 ">Bedriftslønn</label>
                     <div class="_field _pay mb-4 form-group w-100 d-flex align-items-center">
                         <input type="text" class="form-control" id="lunch_benefit"  value="<?php echo get_user_meta($uid, 'lunch_benefit', true );  ?>">
                         <select name="business_setting_type" id="business_setting_type" >
@@ -379,7 +374,7 @@ $uid = get_current_user_id();
                     </div>
                     </div>                    
                     <div class="mt-5">                    
-                        <input type="submit" class="btn_primary"  value="Save"/>
+                        <input type="submit" class="btn_primary"  value="Lagre"/>
                     </div>
                     
                     <img src="<?php bloginfo('template_directory'); ?>/reources/images/red cross.png" alt="" class="_cross">
@@ -392,14 +387,14 @@ $uid = get_current_user_id();
     <section class="hideme overlay invoice">
         <div class="popup">
             <div class="popup_wrapper">
-                <h3 class="ad_productss">Invoice</h3>
+                <h3 class="ad_productss">Faktura</h3>
 
                 <div class="invoice_table">
                 <table class="_table">
                                         <thead>
                                         <tr>
                                             <th scope="col">ID</th>
-                                            <th scope="col">Week</th>                                                                 
+                                            <th scope="col">Uke</th>                                                               
                                             <th scope="col">Type</th>                                    
                                             <th scope="col">Price</th>                                     
                                             <th scope="col">Details</th>
@@ -465,7 +460,7 @@ $uid = get_current_user_id();
     <section class="hideme  overlay invoice_detail_popup">                                               
             <div class="popup">
                 <div class="popup_wrapper">
-                    <h3 class="ad_productss">Invoice Details</h3>                 
+                    <h3 class="ad_productss">Fakturadetaljer</h3>                 
                         <div class="w-100 ajax_invoice"> </div>  
                         <img src="<?php bloginfo('template_directory'); ?>/reources/images/red cross.png" alt="" class="_cross ">
                 </div>                
@@ -475,20 +470,20 @@ $uid = get_current_user_id();
     <section class="hideme  overlay daily_orders_popup">                                               
             <div class="popup">
                 <div class="popup_wrapper">
-                    <h3 class="ad_productss">Daily overview of orders</h3> 
+                    <h3 class="ad_productss">Daglig overview of orders</h3> 
                 <div class="custom_container catering_wrapper mt-5 mb-5">
-                                <div class="calender_wrapper d-flex justify-content-between align-items-center">                        
+                                <div class="calender_wrapper justify-content-between align-items-center">                        
                                         <div class="catering_card_wrapper">
                                             <div class="invoice_table">
                                                 <table class="_table">
                                                     <thead>
                                                     <tr>
-                                                        <th scope="col">Order ID</th>
-                                                        <th scope="col">Date</th>
-                                                        <th scope="col">Order Type</th>
-                                                        <th scope="col">Week Id</th>
-                                                        <th scope="col">Total Price</th>
-                                                        <th scope="col">User Type</th>
+                                                        <th scope="col">Bestillings ID</th>
+                                                        <th scope="col">Dato</th>
+                                                        <th scope="col">Ordre type</th>
+                                                        <th scope="col">Uke</th>
+                                                        <th scope="col">Total pris</th>
+                                                        <th scope="col">Brukertype</th>
                                                         <th scope="col">Status</th>
                                                     </tr>
                                                     </thead>
@@ -529,7 +524,7 @@ $uid = get_current_user_id();
                                                                                         <td><?php echo get_post_meta( get_the_ID(), 'order_status', true ); ?> <i class="fa-solid fa-down-to-line"></i></td>
                                                                                         </tr>
                                                             <?php endwhile; wp_reset_query(); else : ?>
-                                                                    <h2><?php _e('Nothing Found','ddd_translate'); ?></h2>
+                                                                
                                                                 <?php endif; ?>  
                                                         
                                                         

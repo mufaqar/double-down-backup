@@ -268,14 +268,14 @@ function create_invoices() {
                     </tr>
                     
                     <tr>									
-                        <td scope="row"><strong>Shipping Method: </strong></td>
+                        <td scope="row"><strong>Shipping Metode: </strong></td>
                         <td scope="row">
                             <?php  if($method == 'method_one')
-                                    { echo "Method 1"; echo " [Company Pay ". get_option('shipping_price') . "]";  }
+                                    { echo "Metode 1"; echo " [Company Pay ". get_option('shipping_price') . "]";  }
                                     elseif($method == 'method_two')
-                                    { echo "Method 2"; echo " [Divided on all Employees]";  }
+                                    { echo "Metode 2"; echo " [Divided on all Employees]";  }
                                     else {
-                                        { echo "Method 3"; echo " [Pickup]";  }
+                                        { echo "Metode 3"; echo " [Pickup]";  }
                                     }?>
                         </td>                       
                 </tr>
@@ -287,7 +287,7 @@ function create_invoices() {
                 <th scope="col">Description</th>
                 <th scope="col">Products</th>
                 <th scope="col">VAT</th>										
-                <th scope="col">Benifit</th>
+                <th scope="col">Fordel</th>
                 <th scope="col">Price</th>
             </thead>
             <tbody>            
@@ -463,7 +463,7 @@ function get_invoice_pay_direct($week,$year,$uid)
 									<tbody>
 									<tr>
 										<td scope="row"><strong>Name: </strong><?php echo $user_info->display_name; ?></td>
-										<td scope="row"><strong>Week: </strong><?php echo $inovice_week ?></td>										
+										<td scope="row"><strong>Uke: </strong><?php echo $inovice_week ?></td>										
 									</tr>
 									<tr>
 										<td scope="row"><strong>Email: </strong><?php echo $user_info->user_login ?></td>

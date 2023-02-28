@@ -8,54 +8,50 @@ reddirectProfile();
         <form class="addprofile" id="addprofile"> 
             <div class="first_step step_wrapper d-flex justify-content-center flex-column align-items-center text-center">
             <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/reources/images/left arrow.png" class="arrow position-absolute" alt="back arrow" /></a>
-                <h2 class="mt-5">Your Information</h2>
-                <p>
-                Here you can register your profile as an individual user outside of a company agreement but still have the opportunity to order lunch, catering or meeting food.
-                </p>
+                <h2 class="mt-5">DIn informasjon</h2>
+                <p>Her kan du registrere din profil som individuell bruker utenom en bedriftsavtale men fortsatt ha mulighet til å bestille lunsj, catering eller møtemat.  </p>
                 
                 <div class="mt-5 w-500">
                     <div class="form-group ">
-                        <label for="exampleInputEmail1">Referral Name</label>
-                        <input type="text" class="form-control" id="referral"  placeholder="Your Referral" value="" />
+                        <label for="exampleInputEmail1">Henvisningsnavn</label>
+                        <input type="text" class="form-control" id="referral"  placeholder="Hvem anbefalte deg?" value="" />
                     </div>
                     <div class="form-group  mt-3">
-                        <label for="exampleInputEmail1">Full Name</label>
-                        <input type="text" class="form-control" id="name"  placeholder="Your Name" value="" required  />
+                        <label for="exampleInputEmail1">Fullt navn</label>
+                        <input type="text" class="form-control" id="name"  placeholder="Ditt navn" value="" required  />
                     </div>
                     <div class="form-group  mt-3">
-                        <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="username"  placeholder="Enter Email Address" value=""  required  />
+                        <label for="exampleInputEmail1">E-post</label>
+                        <input type="email" class="form-control" id="username"  placeholder="Skriv din epost" value=""  required  />
                     </div>
                     <div class="form-group  mt-3 mb-5">
-                        <label for="exampleInputEmail1">Phone</label>
-                        <input type="number" class="form-control" id="phone"  placeholder="Enter Phone Number" value=""   />
+                        <label for="exampleInputEmail1">Telefon</label>
+                        <input type="number" class="form-control" id="phone"  placeholder="Skriv ditt telefonnummer" value=""   />
                     </div>
 
                     <div class="tou mt-5">
                         <h2 class="">
-                        Terms of use, privacy and relevant information
+                        Vilkår for bruk, personvern og relevant informasjon
+
                         </h2>
                         <p style="margin-top: -.8rem;" class="mb-4">
-                            I will receive relevant information about product and services
-                            from the Double Down Dish. This can be , for example,information
-                            about the lunch menu and nutritional content,news and changes,
-                            offers, compaigns, surveys etc. We promise not to bother you
-                            prematurely
+                        Jeg vil gjerne motta relevant informasjon om produkter og tjenester fra Double Down Dish. Dette kan være informasjon, for eksempel om lunsjmenyer og næringsinnhold, nyheter og endringer, tilbud, kampanjer, undersøkelser osv. Vi lover å ikke plage deg for tidlig.
+
                         </p>
                         <div class="d-flex align-items-center mb-5">
                             <p class="">
                                 <input type="radio" id="yes" name="radio-group" checked>
-                                <label for="yes">Yes, Please</label>
+                                <label for="yes">Ja, takk</label>
                             </p>
                             <p style="margin-left: 2rem;">
                                 <input type="radio" id="test2" name="radio-group">
-                                <label for="test2">No Thanks</label>
+                                <label for="test2">Nei, takk</label>
                             </p>
                         </div>
 
                     </div>
 
-                    <button type="next" class="btn_primary d-block next" >Complete</button>
+                    <button type="next" class="btn_primary d-block next" >Fullfør</button>
                 </div>
             </div>
             </form>
@@ -66,15 +62,14 @@ reddirectProfile();
                     <div class="right">
                         <img src="<?php bloginfo('template_directory'); ?>/reources/images/img 3.png" alt="" />
                     </div>
-                    <h1 class="finished">Finished!</h1>
-                    <h2 class="looking">We look forward to make you lunch</h2>
+                    <h1 class="finished">Ferdig!</h1>
+                    <h2 class="looking">Vi gleder oss til å lage lunsj til deg</h2>
                     <p class="find_information">
-                    We have now sent you an email where youwill find information on how to login and manage your company and your orders. Companies receive an invoice every second week.
-                    </p>
+                    Vi har nå sendt deg en e-post hvor du finner informasjon om hvordan du logger inn og administrerer din bedrift og dine bestillinger. Bedrifter mottar en faktura annenhver uke. </p>
                     <h3 class="employees_receive">
-                        Employees receive it at the end of each week
+                    Ansatte mottar den på slutten av hver uke
                     </h3>
-                    <a href="<?php echo home_url(); ?>" class="btn_primary mb-5">Go to the front</a>
+                    <a href="<?php echo home_url(); ?>" class="btn_primary mb-5">Gå til startside</a>
                 </div>
             </div>
             </div>

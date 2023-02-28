@@ -93,7 +93,7 @@ $user_info = get_userdata( $current_user->ID);
 
                     </tbody>
                     <?php endwhile; wp_reset_query(); else : ?>
-                                                    <h2><?php _e('Nothing Found','ddd_translate'); ?></h2>
+                                                    <h2><?php _e('Ingenting funnet','ddd_translate'); ?></h2>
                                                 <?php endif; ?>  
                   </table>
 
@@ -135,7 +135,7 @@ $user_info = get_userdata( $current_user->ID);
                   </table> -->
 
                   <div class="mt-4 d-flex justify-content-end">
-                    <p>* All prices incl. 15% VAT</p>
+                    <p>*Alle priser ink. 15% Mva</p>
                   </div>
 
                 </div>

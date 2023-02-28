@@ -352,14 +352,14 @@ function my_get_current_user_roles() {
     $user_role_arr =  my_get_current_user_roles();
     $c_user_role = $user_role_arr[0];
         if($c_user_role == 'personal') { ?>
-            <a href="<?php echo get_site_url(); ?>/profile" class="singleprofile myprofile active" onclick="myProfile()">My <br> Profile</a>
+            <a href="<?php echo get_site_url(); ?>/profile" class="singleprofile myprofile active" onclick="myProfile()">Min  <br>  Profil</a>
             <?php
         }
         else {
 
         ?>
-        <a href="<?php echo get_site_url(); ?>/profile" class="myprofile active" onclick="myProfile()">My <br> Profile</a>
-        <a href="<?php echo get_site_url(); ?>/company-profile" class="companyProfile active" onclick="companyProfile()">Company<br> Profile</a>
+        <a href="<?php echo get_site_url(); ?>/profile" class="myprofile active" onclick="myProfile()">Min <br> Profil</a>
+        <a href="<?php echo get_site_url(); ?>/company-profile" class="companyProfile active" onclick="companyProfile()">Selskaps<br>  Profil</a>
         <?php
     }  
    
@@ -409,7 +409,7 @@ function my_get_current_user_roles() {
     function show_Allergens(){
         ?>
 
-        <h6 class="mt-2">Allergenes:</h6>
+        <h6 class="mt-2">Allergener:</h6>
                                                 <p class="allergens">
                                                     <?php 
                                                     echo strip_tags (
@@ -528,18 +528,18 @@ function cancel_Oder($oid, $date) {
 //    echo  $current_time;
     if($today_date == $date && $current_time < strtotime(date('11:00')))
     {
-        ?><button data-oid="<?php echo $oid?>" class="btn_primary btn_cancel " >Cancel Order</button> <?php
+        ?><button data-oid="<?php echo $oid?>" class="btn_primary btn_cancel " >Avbryt bestillingen</button> <?php
     }
     else{
 
         if($today_day_name == 'Friday'  && $current_time > strtotime(date('11:00')) ) {
 
-            ?><button data-oid="<?php echo $oid?>" class="btn_primary btn_cancel" >Cancel Order</button> <?php
+            ?><button data-oid="<?php echo $oid?>" class="btn_primary btn_cancel" >Avbryt bestillingen</button> <?php
         }
         else 
         {
 
-            ?><button data-oid="<?php echo $oid?>" class="btn_primary btn_cancel " >Cancel Order</button> <?php
+            ?><button data-oid="<?php echo $oid?>" class="btn_primary btn_cancel " >Avbryt bestillingen</button> <?php
 
         }      
     }

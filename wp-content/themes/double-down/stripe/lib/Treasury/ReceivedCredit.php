@@ -16,7 +16,7 @@ namespace Stripe\Treasury;
  * @property int $created Time at which the object was created. Measured in seconds since the Unix epoch.
  * @property string $currency Three-letter <a href="https://www.iso.org/iso-4217-currency-codes.html">ISO currency code</a>, in lowercase. Must be a <a href="https://stripe.com/docs/currencies">supported currency</a>.
  * @property string $description An arbitrary string attached to the object. Often useful for displaying to users.
- * @property null|string $failure_code Reason for the failure. A ReceivedCredit might fail because the receiving FinancialAccount is closed or frozen.
+ * @property null|string $failure_code Anledning for the failure. A ReceivedCredit might fail because the receiving FinancialAccount is closed or frozen.
  * @property null|string $financial_account The FinancialAccount that received the funds.
  * @property null|string $hosted_regulatory_receipt_url A <a href="https://stripe.com/docs/treasury/moving-money/regulatory-receipts">hosted transaction receipt</a> URL that is provided when money movement is considered regulated under Stripe's money transmission licenses.
  * @property \Stripe\StripeObject $initiating_payment_method_details

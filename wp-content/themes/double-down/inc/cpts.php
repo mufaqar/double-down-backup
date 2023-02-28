@@ -362,13 +362,13 @@ function cptui_register_my_taxes_product_sub_category() {
 	 */
 
 	$labels = [
-		"name" => __( "Heating Options", "twentytwentytwo" ),
+		"name" => __( "Oppvarmingsmuligheter", "twentytwentytwo" ),
 		"singular_name" => __( "Heating Option", "twentytwentytwo" ),
 	];
 
 	
 	$args = [
-		"label" => __( "Heating Options", "twentytwentytwo" ),
+		"label" => __( "Oppvarmingsmuligheter", "twentytwentytwo" ),
 		"labels" => $labels,
 		"public" => true,
 		"publicly_queryable" => true,
